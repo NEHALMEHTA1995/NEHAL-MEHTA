@@ -1,0 +1,33 @@
+package com.niit.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Supplier {
+	public class Suppliermodel {
+		private int SupplierId;
+	    private String SupplierName;
+	    
+	    @Id
+	    @Column(name = "Supplier Id", length = 20, nullable = false)
+	    public int getSupplierId() {
+	        return SupplierId;
+	    }
+	 
+	    public void SupplierId(int SupplierId) {
+	        this.SupplierId = SupplierId;
+	    }
+
+	    @Column(name = "Supplier Name", length = 255, nullable = false)
+	    public String getSupplierName() {
+	        return SupplierName;
+	    }
+	    public void setSupplierName(String name) {
+	        this.SupplierName= name;
+	    }   
+	    
+	  
+	}
+}
